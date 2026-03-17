@@ -4,17 +4,20 @@ import background from '@/assets/background.svg';
 ---
 
 
-<div id="container" class="h-screen w-screen bg-black">
+<div id="container" class="h-screen w-screen">
     <a href="https://hackclub.com" class="absolute">
-        <img src="https://assets.hackclub.com/flag-orpheus-left-bw.svg"
+        <img src="https://assets.hackclub.com/flag-orpheus-left.svg"
              alt="Hack Club Flag"
+             style={`width: clamp(100px, 15vw, 300px);`}
         >
     </a>
-    <div id="textContainer" class="h-screen w-screen my-auto flex flex-col items-center justify-center text-center">
+    <div id="textContainer" class="h-screen w-screen my-auto flex flex-col items-center justify-center text-center px-4">
         <h1 class="title">512</h1>
         <h2 class="subtitle">You ship a tiny project,</h2>
         <h2 class="subtitle">We ship a drive to hold a thousand.</h2>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>Submit</button></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <button>Submit</button>
+        </a>
     </div>
 </div>
 
@@ -25,8 +28,19 @@ import background from '@/assets/background.svg';
 		font-size: 10rem;
 	}
     .subtitle {
-        font-family: 'Jersey 10', serif;
-        color: white;
         font-size: 3rem;
+    }
+    button {
+        border: white solid 1px;
+        margin: 1rem;
+        padding: 0.5rem 2rem;
+        font-size: 2rem;
+        background: #ec3750;
+        color: white;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    button:hover {
+        background: #c7283e;
     }
 </style>
