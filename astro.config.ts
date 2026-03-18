@@ -7,4 +7,5 @@ export default defineConfig({
     vite: {
         plugins: [tailwindcss()],
     },
+    site: 'https://512.sahana.dev'
 });
