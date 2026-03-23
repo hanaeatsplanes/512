@@ -1,15 +1,16 @@
 ---
-import astroLogo from '@/assets/astro.svg';
-import background from '@/assets/background.svg';
+import Index from "@/pages/index.astro"
+import { Image } from "astro:assets"
+import orpheusFlag from "@/assets/flag-orpheus-left.svg"
 ---
 
 
 <div id="container" class="h-screen w-screen">
     <a href="https://hackclub.com" class="absolute">
-        <img src="/flag-orpheus-left.svg"
+        <Image src={orpheusFlag}
              alt="Hack Club Flag"
              style={`width: clamp(100px, 15vw, 300px);`}
-        >
+        />
     </a>
     <div id="textContainer" class="h-screen w-screen my-auto flex flex-col items-center justify-center text-center px-4">
         <h1 class="title">512</h1>
