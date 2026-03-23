@@ -2,22 +2,115 @@
 
 ---
 
-<div id="container" class="h-screen w-screen my-auto flex flex-col items-center justify-center text-center px-4">
-    <h2 class="title">Requirements</h2>
-    <p class="text-3xl" >
-        Your website must fit the requirements imposed by the <a href="https://512kb.club/" class="underline">512KB Club</a>.<br/>
-        This includes URL scanning your website using <a href="https://radar.cloudflare.com/scan" class="underline">Cloudflare Radar</a><br/>
-        and ensuring <i>all</i> pages are &lt;512MB in size.
-    </p>
-    <p>
-        Your website must do something. It must be either informational OR technical. It cannot just be
-    </p>
+<div id="container" class="min-h-screen w-screen flex flex-col items-center justify-center px-4 py-12">
+    <h2 class="title mb-16">FAQ</h2>
+    <div class="faq-timeline">
+        <div class="faq-row" style="justify-content: flex-start;">
+            <div class="faq-content" style="max-width: 45%; text-align: left;">
+                <h3>What is 512?</h3>
+                <p>512 is a hack club ysws where you ship a optimized website, and we ship you retro prizes.</p>
+            </div>
+        </div>
+        
+        <div class="faq-row" style="justify-content: flex-end;">
+            <div class="faq-content" style="max-width: 45%; text-align: right;">
+                <h3>How do I check?</h3>
+                <p>Use <a href="https://radar.cloudflare.com/scan" class="underline">Cloudflare Radar</a> to scan your website and see its size.</p>
+            </div>
+        </div>
+        
+        <div class="faq-row" style="justify-content: flex-start;">
+            <div class="faq-content" style="max-width: 45%; text-align: left;">
+                <h3>What is the 512KB Club?</h3>
+                <p>Check out <a href="https://512kb.club/" class="underline">512kb.club</a> to learn more about the club and its mission.</p>
+            </div>
+        </div>
+        
+        <div class="faq-row" style="justify-content: flex-end;">
+            <div class="faq-content" style="max-width: 45%; text-align: right;">
+                <h3>What is Hack Club?</h3>
+                <p>Hack Club is a 501(c)(3) nonprofit organization based in the U.S. aimed at supporting teenagers develop their skills. We have organized events such as High Seas and Shipwrecked in the past. You can see more of what we do at <a href="https://hackclub.com" class="underline">hackclub.com</a>.</p>
+            </div>
+        </div>
+        
+        <div class="faq-row" style="justify-content: flex-start;">
+            <div class="faq-content" style="max-width: 45%; text-align: left;">
+                <h3>Who can participate?</h3>
+                <p>Anyone between ages 13-18 can participate no matter their skill level!</p>
+            </div>
+        </div>
+        
+        <div class="faq-row" style="justify-content: flex-end;">
+            <div class="faq-content" style="max-width: 45%; text-align: right;">
+                <h3>I have more questions!</h3>
+                <p>Join Hack Club's Slack and join #frequency to connect with the community.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <style>
     .title {
         font-family: 'Jacquard 12', serif;
-        font-size: 8vw
+        font-size: 8vw;
+        text-align: center;
     }
+    
+    .faq-timeline {
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 60px;
+    }
+    
+    .faq-row {
+        display: flex;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    
+    .faq-content {
+        background: transparent;
+        border: 3px solid black;
+        border-radius: 0;
+        padding: 40px;
+        transition: all 0.3s ease;
+        image-rendering: pixelated;
+    }
+    
+    .faq-content:hover {
+        background: transparent;
+        border-color: black;
+        transform: translateY(-2px);
+        box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+    
+    .faq-content h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+    }
+    
+    .faq-content p {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        margin: 0;
+        color: inherit;
+    }
+    
 
+    @media (max-width: 768px) {
+        .faq-timeline {
+            padding: 0 20px;
+        }
+        
+        .faq-row {
+            justify-content: center !important;
+        }
+        
+        .faq-content {
+            max-width: 90% !important;
+        }
+        
+
+    }
 </style>

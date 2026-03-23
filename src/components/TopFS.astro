@@ -26,11 +26,27 @@ import orpheusFlag from "@/assets/flag-orpheus-left.svg"
 <style>
     .title {
         font-family: 'Jacquard 12', serif;
-        color: white;
         font-size: 12vw;
         padding: 0;
         margin: 0;
         line-height: 1;
+        color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .title:hover {
+        background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta, red);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 2s ease infinite;
+    }
+    
+    @keyframes rainbow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
     button {
         border: white solid 1px;
